@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-<<<<<<< HEAD:hot-marias.js
 app.use(express.static(__dirname, + '/assets'));
 
 // Basic route that sends the user first to the AJAX Page
