@@ -1,0 +1,23 @@
+{
+  "name": "hot-marias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hot-marias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monicaj314/hot-marias.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monicaj314/hot-marias/issues"
+  },
+  "homepage": "https://github.com/monicaj314/hot-marias#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
