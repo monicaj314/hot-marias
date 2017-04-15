@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Hot Maria's Restaurant: New Reservations</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <title>Hot Maria's Restaurant: Reservations</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"></head>
 
 <body>
 
@@ -18,7 +19,7 @@
             <h1>Hot Maria's</h1>
             <h3>Welcome</h3>
             <hr>
-            <button type="button" class="btn btn-default btn-lg" id="btn-view-tables">Home</button>
+            <button type="button" class="btn btn-default btn-lg" id="btn-home">Home</button>
             <button type="button" class="btn btn-danger btn-lg" id="btn-view-tables">View Tables</button>
         </div>
         <div class="row">
@@ -32,11 +33,11 @@
 
                         <form id="form-new-reservation">
                             <div class="form-group">
-                                <label for="Name">Name</label>
+                                <label for="Name">Party's Name</label>
                                 <input type="text" class="form-control" id="Name" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Password</label>
+                                <label for="phone">Phone Number</label>
                                 <input type="tel" class="form-control" id="phone" placeholder="">
                             </div>
                             <div class="form-group">
