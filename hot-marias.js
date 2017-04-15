@@ -12,20 +12,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(express.static(__dirname + '/'));
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../../index.html"));
-  
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get("/view", function(req, res) {
-  res.sendFile(path.join(__dirname, "../../view.html"));
+  res.sendFile(path.join(__dirname, "view.html"));
 });
 
 app.get("/make", function(req, res) {
-  res.sendFile(path.join(__dirname, "../../make.html"));
-});    
+  res.sendFile(path.join(__dirname, "make.html"));
+});
 
 
 // View curent reservations
@@ -35,11 +35,11 @@ app.get("/api/reservations", function(req, res) {
 
 // Create New Reservation - takes in JSON input
 app.post("/api/new", function(req, res) {
-  var newReservation = req.body;	
+  var newReservation = req.body;
   reservations.push(newReservation);
   res.json(newReservation);
-});   
-               
+});
+
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
