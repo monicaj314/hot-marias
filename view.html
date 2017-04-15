@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Page</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Hot Maria's</h1>
+            <h3>Welcome</h3>
+            <hr>
+            <a href="/add"><button type="button" class="btn btn-danger btn-lg" id="btn-view-tables">View Tables</button></a>
+            <a href="/all"><button type="button" class="btn btn-warning btn-lg" id="btn-make-reservation">Make Reservation</button></a>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Current Reservations</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Table</th>
+                                    <th>Customer ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-number">
+                                        <p>3</p>
+                                    </td>
+                                    <td class="customer-id"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <p><small><a href="#" id="apilink">API Link</a> | <a href="#" id="apiwaitlist">API Wait List</a></small></p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
