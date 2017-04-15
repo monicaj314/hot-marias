@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Page</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Hot Maria's</h1>
+            <h3 class="text-center">Reserve your spot today!</h3>
+            <hr>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button>
+                <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home"></span>&nbsp;</button>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Make Reservation</strong></h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input type="text" class="form-control" id="Name" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Password</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="eail" class="form-control" id="email" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="uniqueid">Unique ID</label>
+                                <input type="text" class="form-control" id="uniqueid" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+                
+                <p><a href="#" id="apilink">API Link</a> | <a href="#" id="apiwaitlist">API Wait List</a></p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
