@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Hot Maria's Restaurant: Reservations</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/hot-marias.js"></script>
+    <meta charset="UTF-8">
+    <title>Hot Maria's Restaurant: Reservations</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
             <h1>Hot Maria's</h1>
             <h3>Welcome</h3>
             <hr>
-            <button type="button" class="btn btn-default btn-lg" id="btn-view-tables">Home</button>
+            <button type="button" class="btn btn-default btn-lg" id="btn-home">Home</button>
             <button type="button" class="btn btn-warning btn-lg" id="btn-make-reservation">Make Reservation</button>
         </div>
         <!-- needs ids: wait list container, current reservation container, table row for each reservation -->
@@ -36,15 +37,19 @@
                             <thead>
                                 <tr>
                                     <th>Table</th>
+                                    <th>Party</th>
+                                    <th>Phone</th>
+                                    <th>E-mail</th>
                                     <th>Customer ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="reservation">
-                                    <td class="table-number">
-                                        <span>3</span>
-                                    </td>
+                                    <td class="table-number"><span>3</span></td>
                                     <td class="customer-id"><span>Area Man</span></td>
+                                    <td class="customer-phone"><span>222-222-2222</span></td>
+                                    <td class="customer-email"><span>bob@thing.com</td>
+                                    <td class="customer-id"><span>52433</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -64,15 +69,19 @@
                             <thead>
                                 <tr>
                                     <th>Table</th>
+                                    <th>Party</th>
+                                    <th>Phone</th>
+                                    <th>E-mail</th>
                                     <th>Customer ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="reservation">
-                                    <td class="table-number">
-                                        <span>3</span>
-                                    </td>
+                                    <td class="table-number"><span>3</span></td>
                                     <td class="customer-id"><span>Area Man</span></td>
+                                    <td class="customer-phone"><span>222-222-2222</span></td>
+                                    <td class="customer-email"><span>bob@thing.com</td>
+                                    <td class="customer-id"><span>52433</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -84,7 +93,6 @@
         <p><small><a href="#" id="apilink">API Link</a> | <a href="#" id="apiwaitlist">API Wait List</a></small></p>
 
     </div>
-
 </body>
 
 </html>
